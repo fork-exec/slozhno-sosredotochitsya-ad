@@ -252,11 +252,11 @@
     grid-column: 2 / 3;
   }
 
-  .content-section:nth-child(2) .content-card{
+  .content-section:nth-child(2) .content-card {
     grid-column: 1 / 4;
   }
 
-  .content-section > .content-section__subtitle{
+  .content-section > .content-section__subtitle {
     grid-column: 2 / 3;
   }
 
@@ -356,12 +356,12 @@
     grid-row: span 1;
   }
 
-  .content-section:nth-child(2) .content-card{
+  .content-section:nth-child(2) .content-card {
     grid-row: 2 / 3 ;
     grid-column: span 1;
   }
 
-  .content-section > .content-section__subtitle{
+  .content-section > .content-section__subtitle {
     grid-column: 2 / 4;
   }
 
