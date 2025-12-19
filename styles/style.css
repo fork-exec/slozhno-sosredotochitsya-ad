@@ -1,9 +1,10 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: var(--font-family);
   background-color: var(--background-color);
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .decorated-zone::before {
@@ -37,15 +38,10 @@
   outline: none;
 }
 
-/* HEADER STYLES */
-
 .header {
-  height: 100vh;
+  min-block-size: 668px;
+  block-size: 100vh;
   padding: 10px;
-  background-image: var(--background-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: repeat(2, 1fr);
@@ -62,7 +58,6 @@
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   block-size: 25px;
-  justify-self: end;
   color: var(--accent-color);
   font-size: var(--regular-font-size);
   text-transform: uppercase;
@@ -120,8 +115,6 @@
   justify-content: end;
   display: inline-block;
 }
-
-/* MAIN STYLES */
 
 .content {
   margin-block: 40px;
@@ -201,10 +194,9 @@
   height: 100%;
 }
 
-/* FOOTER STYLES */
-
 .footer {
   padding: 10px;
+  min-block-size: 668px;
   block-size: 100vh;
   display: grid;
 }
@@ -218,7 +210,7 @@
   line-height: var(--title-line-height);
 }
 
-@media (width >= 768px){
+@media (width >= 768px) {
   .header {
     padding: 20px;
   }
@@ -357,7 +349,7 @@
   }
 
   .content-section:nth-child(2) .content-card {
-    grid-row: 2 / 3 ;
+    grid-row: 2 / 3;
     grid-column: span 1;
   }
 
